@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 7 (Vinícius Ângelo Alves)</title>
+    <script>
+    
+        m= 1   
+        par = 0
+        impar = 0
+        somap = 0
+        somai = 0
+        for(x=1;x<=10;x++){
+            n = prompt('digite um numero')
+            n = parseInt(n)
+            if(n % 2 === 0){
+             par = m + par
+             somap= somap + n
+            }else{
+                if(n % 1 === 0){  
+                 m = 1
+                 impar = m + impar
+                 somai = n + somai 
+                 }
+            }
+        }
+        document.write('possuem ' + par + ' numeros pares, e a soma de todos eles é: ' + somap + '<br>')
+        document.write('possuem ' + impar +' numeros impares, e a soma de todos eles é: ' + somai + '<br>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

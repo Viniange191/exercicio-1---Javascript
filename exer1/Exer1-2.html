@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 1-2 (Vinícius Ângelo Alves)</title>
+
+    <script>
+    
+     figura_geometrica = prompt('Informe a figura geometrica (quadrado, triangulo, retangulo, trapezio)')
+     if(figura_geometrica == 'quadrado'){
+         lado = prompt('informe o valor')
+         resfigura = lado*lado
+     }else{
+        if (figura_geometrica == 'triangulo'){
+            base = prompt('Informe a base')
+            altura = prompt('Informe a altura')
+            resfigura = base*altura
+        } else{
+            if (figura_geometrica == 'retangulo'){
+              basere = prompt('Informe a base')
+              alturare = prompt('Informe a altura')
+              resfigura = basere*alturare
+            }else{
+                if(figura_geometrica == 'trapezio'){
+                    basemaior = prompt('Informe a base maior')
+                    basemaior = parseInt(basemaior)
+                    basetra = prompt('Informe a base menor')
+                    basetra = parseInt(basetra)
+                    alturatra = prompt ('Informe a altura')
+                    alturatra = parseInt(alturatra)
+                    resfigura = ((basemaior+basetra)*alturatra)/2
+                }else{
+                    document.write('Informe uma das quatro figuras: quadrado, triangul, retangulo ou trapezio')
+                }
+            }
+        }
+     }
+     document.write('Figura geometrica de: '+figura_geometrica+'<br>')
+     document.write('O resultado é: ',resfigura)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

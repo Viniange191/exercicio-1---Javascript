@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 5 (Vinícius Ângelo Alves)</title>
+<script>  
+nome = prompt('Digite seu nome')
+anonascimento = prompt('Digite o ano do seu nascimento')
+anoatual = prompt('Digite o ano atual')
+
+idade = anoatual - anonascimento
+document.write('Olá '+ nome +' voce possuí: '+ idade + '<br>')
+if(idade>=18){
+    document.write('Voce já é de maior e pode fazer a carteira de motorista')
+}else{
+    if(idade>=16){
+        document.write('Voce já pode votar')
+    }else{
+        document.write('Voce não pode votar')
+    }
+}
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

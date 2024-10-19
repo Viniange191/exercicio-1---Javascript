@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 1-3 (Vinícius Ângelo Alves)</title>
+<script>
+    alert('Selecione os valores e escolha um produto notavel')
+    alert('1 - Quadrado da diferença de dois numeros')
+    alert('2 - Quadrado da soma de dois numeros')
+    alert('3 - Soma do quadrado de dois numeros')
+    alert('4 - Diferença do quadrado de dois numeros')
+    alert('5 - Produto da soma com a diferença de dois numeros')
+    a = prompt('Informe um numero')
+    b = prompt('Informe um outro numero')
+    a = parseInt(a)
+    b = parseInt(b)
+    codigo = prompt('Informe o codigo do produto notavel')
+    document.write('produto notavel ')
+    if(codigo > 5){
+        document.write('Codigo invalido')
+    }else{
+        if(codigo == 1){
+        resultado =(a-b)*(a-b)
+        desproduto = document.write('Quadrado da diferença de dois numeros')    
+    }else{
+        if(codigo == 2){
+            resultado = (a+b)*(a+b) 
+            desproduto = document.write('Quadrado da soma de dois numeros')
+        }else{if(codigo == 3){
+            resultado= (a*a)+(b*b)
+            desproduto = document.write('Soma do quadrado de dois numeros')
+        }else{
+        if(codigo == 4){
+            resultado = (a*a)-(b*b)
+            desproduto = document.write('Diferença do quadrado de dois numeros')
+        }else{
+        if(codigo == 5){
+        resultado = (a-b)*(a+b)
+        desproduto = document.write('Produto da soma com a diferença de dois numeros')
+        }
+          }
+        }
+    }
+ }
+}
+document.write('<br>')
+document.write('Valor do pruduto notavel é: ' + resultado + '<br>')
+</script>
+</head>
+<body>
+
+</body>
+</html>

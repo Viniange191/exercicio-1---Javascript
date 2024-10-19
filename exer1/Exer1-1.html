@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 1-1 (Vinícius Ângelo Alves)</title>
+    <script>
+        
+        let nome = prompt('Informe o nome: ')
+        let n1 = prompt ('Informe a primeira nota: ')
+        let n2 = prompt ('Informe a segunda nota: ')
+        n1 = parseInt(n1)
+        n2 = parseInt(n2)
+        let nr_aula_ministrada = prompt('Nr aulas ministradas: ')
+        let nr_aula_assistida = prompt('Nr aulas assistidas: ')
+        media = (n1+n2)/2
+        perfreq = (nr_aula_assistida*100)/nr_aula_ministrada
+    
+        document.write('O nome do aluno: '+ nome +'<br>')
+        document.write('A media das suas notas é: '+ media +'<br>')
+        document.write('Percentual frequencia: '+ perfreq+'<br>')
+        document.write('Sua situação é: ')
+        
+        if(media >= 7 && perfreq >= 75){
+            document.write('Aprovado' + '<br>')
+        }else{
+            document.write('Reprovado'  + '<br>')
+        }
+
+        </script>
+</head>
+<body>
+
+</body>
+</html>
